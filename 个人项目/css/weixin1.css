@@ -1,0 +1,145 @@
+html,body,ul,li,ol,th,h1,h2,h3,h4,h5,h6,a,img,div,p,span,td{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	list-style-type: none;
+	font-weight: "微软雅黑";
+}
+/*顶部导航栏开始*/
+.nav_top{
+	width:100%;
+	height:60px;
+}
+.nav_top .nav{
+	width:100%;
+	height:60px;
+	background:#90ee90;
+	position:fixed;
+	z-index: 999;
+}
+.nav_top .nav img{
+    position: absolute;
+    left:460px;
+}
+.nav_top .nav ul{
+    width:800px;
+    position: absolute;
+    left:620px;
+}
+.nav_top .nav ul li{
+	float:left;
+	width:90px;
+	height:60px;
+	line-height: 60px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.nav_top .nav ol{
+	position: absolute;
+	right:20px;
+	bottom:-800px;
+}
+.nav_top .nav ol li{
+	width:12px;
+	height:12px;
+	border:1px solid gray;
+	border-radius: 50%;
+	background-color: red;
+    margin-top:20px;
+}
+/*首页内容部分开始*/
+#home_page{
+	width:100%;
+	height:100%;
+	background:url(../img/b1_bg.jpg) no-repeat;
+	background-size:cover;
+}
+#home_page .home_page{
+	width:1200px;
+	height:900px;
+	margin:0 auto;
+}
+#home_page .home_page div.b1_02{
+	position: relative;
+	z-index:1;
+	float:left;
+	margin-top:160px;
+	margin-left:-50px;
+    animation:img1 2s ease 0s forwards;
+}
+@-webkit-keyframes img1{
+	0%{
+		margin-left:-300px;
+	}
+	100%{
+		margin-left:-50px;
+	}
+} 
+#home_page .home_page div.b1_03{
+	width:328px;
+	height:250px;
+	float:right;
+    margin-top:280px;
+    margin-right:200px;
+    animation:img2 2s ease 0s;
+}
+@-webkit-keyframes img2{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:0.5;
+	}
+	100%{
+		opacity:1;
+	}
+}
+#home_page .home_page div.b1_03 img:nth-child(2){
+	margin-left:15px;
+    margin-top:10px;
+	animation:img3 2s ease 0s infinite;
+}
+@-webkit-keyframes img3{
+	0%{
+		opacity:0;
+	}
+	50%{
+		opacity:0.8;
+	}
+	100%{
+		opacity:0;
+	}
+}
+#home_page .home_page div.b1_04{
+    position: absolute;
+    left:1420px;
+	float:right;
+	animation:img4 2s ease 0s forwards; 
+}
+@-webkit-keyframes img4{
+	0%{
+		top:900px;
+	}
+	100%{
+		top:500px;
+	}
+}
+#home_page .home_page div.b1_01{
+	position: relative;
+	top:-360px;
+	left:-220px;
+	width:1440px;
+	height:441px;
+}
+#part2{
+	width:100%;
+	height:100%;
+	background:url(../img/b2_bg.jpg) no-repeat;
+	background-size:cover;
+}
+#part2 .part2{
+	width:1200px;
+	margin:0 auto;
+	border:1px solid red;
+}
